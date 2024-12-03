@@ -6,4 +6,7 @@ public class ToDoMapper {
     public static ToDoDTO mapToTodo(ToDoItem todoitem){
         return new ToDoDTO(todoitem.getId(), todoitem.getTitle(), todoitem.getDescription());
     }
+    public static ToDoItem mapToTodo(ToDoDTO toDoDTO){
+        return new ToDoItem(toDoDTO.getId(), toDoDTO.getTitle(), toDoDTO.getDescription());
+    }
 }
